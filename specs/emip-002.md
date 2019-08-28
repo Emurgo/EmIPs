@@ -17,7 +17,7 @@ make payments by simply clicking links on webpages or scanning QR Codes.
 
 # Proof of Concept
 
-![proof of concept](../images/image1.gif)
+![proof of concept](assets/uri-poc.gif)
 
 # Core Implementation
 
@@ -89,7 +89,7 @@ in Firefox.
 In our case, this means we can only register this protocol from within the Yoroi extension.
 
 3. Registering a new protocol prompts the user to accept:
-  ![permission dialog](../images/image2.png)
+  ![permission dialog](assets/uri-prompt.png)
 
 4. This method is in general **only available within secure contexts (HTTPS)**.
 As a consequence, registering a protocol from within an extension doesn't work
