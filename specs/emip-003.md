@@ -41,6 +41,7 @@ ChaCha20Poly1305 combines these together to give an algorithm that both encrypts
     1) Result of `PBKDF2` as the key
     1) A randomly-initialized 12-byte array as the nonce
     1) Tag size of 16 bytes
+    1) An empty *additional authenticated data* (AAD) field
 1) Return a byte array representing the concatenation of
     1) The salt
     1) The nonce
