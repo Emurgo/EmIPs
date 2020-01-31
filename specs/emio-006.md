@@ -101,4 +101,4 @@ This is a bitset with the following table used for values
 |---|---|
 | 0 | no adversarial behavior detected (prefer to omit the field entirely in this case) |
 | 1 | multiple blocks for a single slot |
-| 2 | no transactions included in blocks |
+| 2 | censoring transactions (ex: no transactions in blocks) |
