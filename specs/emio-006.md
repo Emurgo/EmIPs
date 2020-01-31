@@ -65,10 +65,10 @@ Here is an example
 ```json
 {
   "0000111122223333444455556666777788889999aaaabbbbccccddddeeeeffff": {
-    "flags": 1
+    "node_flags": 1
   },
   "1000111122223333444455556666777788889999aaaabbbbccccddddeeeeffff": {
-    "flags": 3
+    "node_flags": 3
   },
 }
 ```
