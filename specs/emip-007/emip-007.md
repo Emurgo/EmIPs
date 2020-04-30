@@ -171,6 +171,8 @@ The best example of this is the chain derivation level in BIP44. The "external" 
 }
 ```
 
+**Note:** Empty arrays or unused keys SHOULD NOT be included in output for backwards compatibility. That way, even if a future iteration introduces a type, importing wallets that don't use this new type will still work on old software.
+
 ### Encryption
 
 The `walletInfo` section should be encrypted using the same algorithm as described by [EMIP3](https://github.com/Emurgo/EmIPs/blob/master/specs/emip-003.md) using a *decryption password*.
@@ -204,10 +206,6 @@ This format doesn't allow generating multiple currencies from a single recovery 
 ### Why are addresses included if they can be derived from the public deriver?
 
 I include the addresses as although they can be derived when a public key is present, they cannot be derived in the balance tracker case. Additionally, it's possible in the future that some new metadata that needs to be tracked contains a foreign key to an address. Therefore, it's easier to just add them in the wallet export.
-
-### Why are empty wrappers not included
-
-We don't add empty wrapper arrays for forwards compatibility. Even if a future wallet format that introduces a new wrapper type, importing then exporting a wallet would still result in the same file.
 
 ## Reference implementation
 
