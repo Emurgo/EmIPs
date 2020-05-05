@@ -1,3 +1,15 @@
+
+---
+EmIP: 5
+Title: Message Signing
+Authors: Sebastien Guillemot <sebastien@emurgo.io>
+Comments-URI: https://github.com/Emurgo/EmIPs/pull/5
+Status: Draft
+Type: Standards
+Created: 2019-08-28
+License: Apache-2.0
+---
+
 # Abstract
 
 Private keys can be used to sign arbitrary data. If you have the public key, you can verify the data was signed by the owner of the private key. This is how transaction signing works internally but its utility is not limited to transactions. This document tries to set a standard for how to represent and verify signed messages for Cardano.
